@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MyShop.DL.PostgreSql;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
@@ -9,9 +10,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MyShop.DL.PostgreSql.Migrations
 {
     [DbContext(typeof(MyShopPostgreSqlContext))]
-    partial class MyShopPostgreSqlContextModelSnapshot : ModelSnapshot
+    [Migration("20200922204517_Add prop website to supplier entity")]
+    partial class Addpropwebsitetosupplierentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

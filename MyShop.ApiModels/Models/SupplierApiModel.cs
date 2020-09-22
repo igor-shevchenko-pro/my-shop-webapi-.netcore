@@ -7,6 +7,7 @@ namespace MyShop.ApiModels.Models
 {
     public abstract class SupplierBaseApiModel : BaseApiModel<string>
     {
+        [JsonProperty("website")]                      public string Website { get; set; }
         [JsonProperty("title"), Required]              public string Title { get; set; }
         [JsonProperty("description")]                  public string Description { get; set; }
         [JsonProperty("email"), Required]              public string Email { get; set; }

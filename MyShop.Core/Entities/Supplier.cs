@@ -7,6 +7,7 @@ namespace MyShop.Core.Entities
 {
     public class Supplier : BaseManualEntity<string>, IBaseLanguageEntity<string>
     {
+        public string Website { get; set; }
         public string Description { get; set; }
         public string Email { get; set; }
         public string EmailExtra { get; set; }
