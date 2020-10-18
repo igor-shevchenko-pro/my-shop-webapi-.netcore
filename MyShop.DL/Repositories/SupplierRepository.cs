@@ -42,12 +42,6 @@ namespace MyShop.DL.Repositories
                 case SupplierSortingEnum.ByTitleDesc:
                     return collection.OrderByDescending(x => x.Title);
 
-                case SupplierSortingEnum.ByDescriptionAsc:
-                    return collection.OrderBy(x => x.Description);
-
-                case SupplierSortingEnum.ByDescriptionDesc:
-                    return collection.OrderByDescending(x => x.Description);
-
                 case SupplierSortingEnum.ByEmailAsc:
                     return collection.OrderBy(x => x.Email);
 
@@ -95,12 +89,6 @@ namespace MyShop.DL.Repositories
 
                 case SupplierSortingEnum.ByExtraAddressDesc:
                     return collection.OrderByDescending(x => x.AddressExtra);
-
-                case SupplierSortingEnum.BySomeInfoAsc:
-                    return collection.OrderBy(x => x.SomeInfo);
-
-                case SupplierSortingEnum.BySomeInfoDesc:
-                    return collection.OrderByDescending(x => x.SomeInfo);
 
 
                 default:
@@ -136,12 +124,6 @@ namespace MyShop.DL.Repositories
                 case SupplierSortingEnum.ByTitleDesc:
                     return collection.OrderByDescending(x => x.Title);
 
-                case SupplierSortingEnum.ByDescriptionAsc:
-                    return collection.OrderBy(x => x.Description);
-
-                case SupplierSortingEnum.ByDescriptionDesc:
-                    return collection.OrderByDescending(x => x.Description);
-
                 case SupplierSortingEnum.ByEmailAsc:
                     return collection.OrderBy(x => x.Email);
 
@@ -189,12 +171,6 @@ namespace MyShop.DL.Repositories
 
                 case SupplierSortingEnum.ByExtraAddressDesc:
                     return collection.OrderByDescending(x => x.AddressExtra);
-
-                case SupplierSortingEnum.BySomeInfoAsc:
-                    return collection.OrderBy(x => x.SomeInfo);
-
-                case SupplierSortingEnum.BySomeInfoDesc:
-                    return collection.OrderByDescending(x => x.SomeInfo);
 
 
                 default:

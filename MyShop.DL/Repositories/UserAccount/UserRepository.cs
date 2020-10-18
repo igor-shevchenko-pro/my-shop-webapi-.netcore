@@ -73,6 +73,36 @@ namespace MyShop.DL.Repositories.UserAccount
                 case UserSortingEnum.ByActivityStatusDesc:
                     return collection.OrderByDescending(x => x.ActivityStatus);
 
+                case UserSortingEnum.ByUserNameAsc:
+                    return collection.OrderBy(x => x.UserName);
+
+                case UserSortingEnum.ByUserNameDesc:
+                    return collection.OrderByDescending(x => x.UserName);
+
+                case UserSortingEnum.ByEmailAsc:
+                    return collection.OrderBy(x => x.Email);
+
+                case UserSortingEnum.ByEmailDesc:
+                    return collection.OrderByDescending(x => x.Email);
+
+                case UserSortingEnum.ByPhoneAsc:
+                    return collection.OrderBy(x => x.Phone);
+
+                case UserSortingEnum.ByPhoneDesc:
+                    return collection.OrderByDescending(x => x.Phone);
+
+                case UserSortingEnum.ByFirstNameAsc:
+                    return collection.OrderBy(x => x.UserProfile.FirstName);
+
+                case UserSortingEnum.ByFirstNameDesc:
+                    return collection.OrderByDescending(x => x.UserProfile.FirstName);
+
+                case UserSortingEnum.BySecondNameAsc:
+                    return collection.OrderBy(x => x.UserProfile.SecondName);
+
+                case UserSortingEnum.BySecondNameDesc:
+                    return collection.OrderByDescending(x => x.UserProfile.SecondName);
+
 
                 default:
                     return collection.OrderByDescending(x => x.Created);
@@ -100,6 +130,36 @@ namespace MyShop.DL.Repositories.UserAccount
 
                 case UserSortingEnum.ByActivityStatusDesc:
                     return collection.OrderByDescending(x => x.ActivityStatus);
+
+                case UserSortingEnum.ByUserNameAsc:
+                    return collection.OrderBy(x => x.UserName);
+
+                case UserSortingEnum.ByUserNameDesc:
+                    return collection.OrderByDescending(x => x.UserName);
+
+                case UserSortingEnum.ByEmailAsc:
+                    return collection.OrderBy(x => x.Email);
+
+                case UserSortingEnum.ByEmailDesc:
+                    return collection.OrderByDescending(x => x.Email);
+
+                case UserSortingEnum.ByPhoneAsc:
+                    return collection.OrderBy(x => x.Phone);
+
+                case UserSortingEnum.ByPhoneDesc:
+                    return collection.OrderByDescending(x => x.Phone);
+
+                case UserSortingEnum.ByFirstNameAsc:
+                    return collection.OrderBy(x => x.UserProfile.FirstName);
+
+                case UserSortingEnum.ByFirstNameDesc:
+                    return collection.OrderByDescending(x => x.UserProfile.FirstName);
+
+                case UserSortingEnum.BySecondNameAsc:
+                    return collection.OrderBy(x => x.UserProfile.SecondName);
+
+                case UserSortingEnum.BySecondNameDesc:
+                    return collection.OrderByDescending(x => x.UserProfile.SecondName);
 
 
                 default:
